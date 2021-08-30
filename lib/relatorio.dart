@@ -10,7 +10,7 @@ class _RelatorioState extends State<Relatorio> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Supply"),
+        title: Text("Relatórios"),
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
@@ -25,16 +25,13 @@ class _RelatorioState extends State<Relatorio> {
             ),
             Card(
               borderOnForeground: true,
-              elevation: 15,
               child: Text("Total Despesa"),
             ),
             Card(
-              elevation: 15,
               child: Text("Distânci Percorrida"),
             ),
             Card(
               borderOnForeground: true,
-              elevation: 15,
               child: Text("Total Despesa"),
             ),
             Text("Relatórios"),

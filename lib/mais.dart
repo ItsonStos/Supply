@@ -10,7 +10,7 @@ class _MaisState extends State<Mais> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Supply"),
+        title: Text("Mais"),
         backgroundColor: Colors.black,
         centerTitle: true,
       ),

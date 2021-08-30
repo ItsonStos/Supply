@@ -39,7 +39,7 @@ class _AbastecerState extends State<Abastecer> {
 //String para seus respectivos tipos
   void _salva() {
     for (_AbastecerState abastecer in abastecimento) {
-      //Instanciando a classe Abastecer:
+      /*//Instanciando a classe Abastecer:
       _AbastecerState cadastro = _AbastecerState(
           this._data,
           this._odometro,
@@ -49,7 +49,7 @@ class _AbastecerState extends State<Abastecer> {
           this._valorTotal,
           this._volume);
 
-      abastecimento.add(cadastro);
+      abastecimento.add(cadastro);*/
     }
   }
 

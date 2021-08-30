@@ -21,7 +21,7 @@ class _AbastecerState extends State<Abastecer> {
   TextEditingController _postoCombustivel = TextEditingController();
 
   //Array que servirá para armazenar os dados salvos no textField
-  /*Se Fosse um Map<chave, valor> nomeMAp =  Map() e para add faz um forEach
+  /*Se Fosse um Map<chave(dynamic), valor((dynamic))> nomeMAp =  Map() e para add faz um forEach
   nomeMap.forEach((chave, valor) => print("$Chave - $Valor"))*/
   List<_AbastecerState> abastecimento = [];
 
@@ -35,18 +35,20 @@ class _AbastecerState extends State<Abastecer> {
     return valorTotal / precoCombustivel;
   }*/
 
-//Instanciando a classe Abastecer:
-  _AbastecerState cadastro = _AbastecerState();
-
 //Método que servira para salvar o dados de entrada em uma Array e converterá os dados do tipo
 //String para seus respectivos tipos
   void _salva() {
-    var odometro = double.tryParse(_odometro.text);
-    var precoCombustivel = double.tryParse(_precoCombustivel.text);
-    var valorTotal = double.tryParse(_valorTotal.text);
-    var volume = double.tryParse(_volume.text);
-
     for (_AbastecerState abastecer in abastecimento) {
+      //Instanciando a classe Abastecer:
+      _AbastecerState cadastro = _AbastecerState(
+          this._data,
+          this._odometro,
+          this._postoCombustivel,
+          this._precoCombustivel,
+          this._tipoCombustivel,
+          this._valorTotal,
+          this._volume);
+
       abastecimento.add(cadastro);
     }
   }
